@@ -12,6 +12,29 @@
 - **단위 테스트 및 통합 테스트 지원**
 - **확장 가능하고 유지보수 가능한 아키텍처 설계**
 
+## 📆 프로젝트 일정
+```mermaid
+gantt
+    title Spring Batch CSV to MySQL 개발 일정
+    dateFormat  YYYY-MM-DD
+    axisFormat  %m/%d
+    section 준비 단계
+    요구사항 분석 및 설계        :a1, 2025-02-17, 1d
+    환경 설정 및 데이터 다운로드 :a2, 2025-02-18, 1d
+    
+    section 개발 단계
+    DB 스키마 설계 및 DDL 작성   :b1, 2025-02-18, 2d
+    배치 프로세스 설계 및 구현   :b2, after b1, 2d
+    로깅 및 예외처리 기능 구현   :b3, after b2, 1d
+    
+    section 테스트 및 검증 단계
+    단위 테스트 및 검증          :c1, 2025-02-22, 1d
+    
+    section 문서화 및 제출
+    문서화 및 실행 가이드 작성   :d1, 2025-02-23, 0.5d
+    최종 제출                   :d2, after d1, 0.5d
+```
+
 ## 🔧 기술 스택
 - **JDK 17**
 - **Spring Boot 3.x**
